@@ -1,0 +1,51 @@
+h3{
+    color: blue;
+    text-align: center;
+}
+#main{
+    margin: 30px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+.alert{
+    background-color: #EAD2D5;
+    color: #72353D;
+}
+
+#rectangulo1{
+    height: 200px;
+    width: 40%;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transform: rotate(90deg);
+    animation: mymove2 5s infinite;
+
+}
+
+#rectangulo2{
+    height: 200px;
+    width: 40%;
+    background-color: red;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transform: rotate(90deg);
+    animation: mymove 5s infinite;
+}
+body{
+    font-family: Verdana;
+    font-size: 1.5em;
+}
+
+/* rectangulo que empieza en rojo*/
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }
+/* rectangulo que empieza en azul*/
+  @keyframes mymove2 {
+    from {background-color: blue;}
+    to {background-color: red;}
+  }
